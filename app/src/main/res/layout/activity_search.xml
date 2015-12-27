@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white_bg_color"
+    android:orientation="vertical">
+
+    <!-- 搜索框 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_50"
+        android:background="@color/main_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_left_small"
+        android:paddingRight="@dimen/margin_right_small">
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="确认"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_big" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/tv_sure"
+            android:background="@drawable/view_border_green_green_10">
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/search_icon" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/iv_search"
+                android:background="@null"
+                android:hint="搜索关键词"
+                android:src="@drawable/search_icon"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_common" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <!-- 下面5个标题 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_50"
+        android:background="@color/main_white_pure_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/main_white_pure_color"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_webo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="微博"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_common" />
+
+            <TextView
+                android:id="@+id/tv_request"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="问答"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_common" />
+
+            <TextView
+                android:id="@+id/tv_zhixun"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="咨询"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_common" />
+
+            <TextView
+                android:id="@+id/tv_qclass"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="轻课堂"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_common" />
+
+            <TextView
+                android:id="@+id/tv_food"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="食疗"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_common" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_line"
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:background="@color/text_green" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mViewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

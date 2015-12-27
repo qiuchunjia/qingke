@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar">
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:text="@string/qikan_title"
+            style="@style/title" />
+    </RelativeLayout>
+
+    <com.zhiyicx.zycx.sociax.component.LoadingView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.zhiyicx.zycx.widget.LoadListView
+        android:id="@+id/qikan_list"
+        android:scrollbars="none"
+        android:padding="5dp"
+        android:background="@drawable/listbg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white_bg_color"
+    android:orientation="vertical">
+
+    <!-- 首页title部分 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_white_pure_color"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_bottom_big"
+        android:paddingTop="@dimen/margin_left">
+
+        <RelativeLayout
+            android:id="@+id/rl_mycase"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_mycase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/userbingli" />
+
+            <TextView
+                android:id="@+id/tv_mycase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_mycase"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="我的病例"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_common" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_down"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/binglidaochu" />
+
+            <TextView
+                android:id="@+id/tv_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_down"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="病例导出"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_common" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_history"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/lishijilu" />
+
+            <TextView
+                android:id="@+id/tv_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_history"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="历史记录"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_common" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- 我的病例 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:background="@color/main_white_pure_color"
+        android:padding="@dimen/margin_left_small">
+
+        <TextView
+            android:id="@+id/tv_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的病例"
+            android:textColor="@color/text_green"
+            android:textSize="@dimen/text_common" />
+
+        <RelativeLayout
+            android:id="@+id/rl_my"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_my"
+            android:layout_marginTop="@dimen/item_height"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="王小宝"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_very_big" />
+
+            <TextView
+                android:id="@+id/tv_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_name"
+                android:layout_marginLeft="@dimen/item_height"
+                android:layout_toRightOf="@id/tv_name"
+                android:text="男"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_name"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_toRightOf="@id/tv_gender"
+                android:text="59"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <TextView
+                android:id="@+id/tv_update_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_marginTop="@dimen/margin_top_big"
+                android:text="更新  2015-09-02"
+                android:textColor="@color/text_more_gray"
+                android:textSize="@dimen/text_common" />
+
+            <TextView
+                android:id="@+id/tv_create_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_update_day"
+                android:layout_marginTop="@dimen/margin_top_big"
+                android:text="创建  2014-11-02"
+                android:textColor="@color/text_more_gray"
+                android:textSize="@dimen/text_common" />
+
+            <TextView
+                android:id="@+id/tv_look"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_update_day"
+                android:layout_alignParentRight="true"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:text="预览"
+                android:textColor="@color/text_more_gray"
+                android:textSize="@dimen/text_common" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_my"
+            android:layout_marginTop="@dimen/margin_top_big">
+
+            <LinearLayout
+                android:id="@+id/ll_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line_" />
+
+                <TextView
+                    android:id="@+id/tv_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_right_small"
+                    android:text="我的病例空空如也"
+                    android:textColor="@color/text_more_gray"
+                    android:textSize="@dimen/text_common" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_box"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_top_big"
+                android:background="@color/text_green"
+                android:padding="5dp"
+                android:text="立即填写"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_common" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <!-- 应用推荐 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_myapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:background="@color/main_white_pure_color">
+
+        <TextView
+            android:id="@+id/tv_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="应用推荐"
+            android:textColor="@color/text_green"
+            android:textSize="@dimen/text_common" />
+
+        <LinearLayout
+            android:id="@+id/ll_notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_app"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="@dimen/margin_top_big"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+
+            <ImageView
+                android:id="@+id/iv_notify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/index_medicine_notify" />
+
+            <TextView
+                android:id="@+id/tv_notify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="用药提醒"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_app"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="@dimen/margin_top_big"
+            android:layout_toRightOf="@id/ll_notify"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+
+            <ImageView
+                android:id="@+id/iv_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/index_cook" />
+
+            <TextView
+                android:id="@+id/tv_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="食疗大全"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

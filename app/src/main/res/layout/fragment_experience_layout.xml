@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white_pure_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_left_small"
+        android:text="全部小组"
+        android:textColor="@color/text_more_gray"
+        android:textSize="@dimen/text_common" />
+
+    <qcjlibrary.listview.base.CommonListView
+        android:id="@+id/mCommonListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/main_white_bg_color"></qcjlibrary.listview.base.CommonListView>
+
+</LinearLayout>

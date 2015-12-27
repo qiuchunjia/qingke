@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_white_pure_color"
+        android:padding="@dimen/margin_left_small">
+
+        <TextView
+            android:id="@+id/tv_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标签"
+            android:textColor="@color/text_green"
+            android:textSize="@dimen/text_common" />
+
+        <TextView
+            android:id="@+id/tv_flag_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:layout_toRightOf="@id/tv_flag"
+            android:text="“癌症治疗”"
+            android:textColor="@color/text_green"
+            android:textSize="@dimen/text_common" />
+    </RelativeLayout>
+
+    <include layout="@layout/listview_common_layout" />
+
+</LinearLayout>

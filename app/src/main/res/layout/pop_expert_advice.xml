@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white_pure_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_white_pure_color"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_sample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingRight="@dimen/margin_right">
+
+            <TextView
+                android:id="@+id/tv_samle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="简历模版"
+                android:textColor="@color/text_green"
+                android:textSize="@dimen/text_common" />
+
+            <ImageView
+                android:id="@+id/iv_samle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_right_small"
+                android:layout_toLeftOf="@id/tv_samle"
+                android:src="@drawable/mobanicon" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_advice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="专家建议"
+            android:textColor="@color/text_yellow"
+            android:textSize="@dimen/text_very_big" />
+
+        <LinearLayout
+            android:id="@+id/ll_advice_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_expert_advice_content" />
+
+            <include layout="@layout/item_expert_advice_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_dianzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/item_height"
+            android:layout_marginTop="@dimen/margin_top_big"
+            android:background="@drawable/view_border_green_white_50"
+            android:text="进入我的电子病历"
+            android:textColor="@color/text_green"
+            android:textSize="@dimen/text_common" />
+    </LinearLayout>
+
+</ScrollView>

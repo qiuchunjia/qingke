@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">癌友帮</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_exit">注销登陆</string>
+
+    <!-- login_layout文字 -->
+    <string name="login_account_txt">账号</string>
+    <string name="login_password_txt">密码</string>
+    <string name="login_btn_txt">登&#160;&#160;&#160;录</string>
+    <string name="login_quickregistration__txt">快速注册</string>
+    <string name="login_forgetpassword__txt">忘记密码</string>
+    <string name="login_qqlogin__txt">QQ登录</string>
+    <string name="login_renrenlogin__txt">人人登录</string>
+    <string name="login_tencentweb__txt">腾讯微博</string>
+    <string name="login_sinaweb__txt">新浪微博</string>
+
+    <!-- register_phone_layout文字 -->
+    <string name="reigter_txt">注册</string>
+    <string name="reigter_phone_txt">手机号注册</string>
+    <string name="reigter_mail_txt">邮箱注册</string>
+    <string name="reigter_again_send_txt">发送验证码</string>
+    <string name="agreement_reigter_txt">青稞网用户协议</string>
+    <string name="agreement_reigter_back">确定</string>
+    <string name="reg_email_regis_hint">请输入正确的注册邮箱</string>
+    <string name="reg_email_regis">邮&#160;箱</string>
+    <string name="reg_pass">密&#160;码 </string>
+    <string name="reg_pass_hint">6~15个字母、数字、符号</string>
+    <string name="reg_re_pass">确&#160;认&#160;</string>
+    <string name="reg_re_pass_hint">请重新输入，确认密码</string>
+    <string name="reg_re_name">昵&#160;称&#160;</string>
+    <string name="reg_re_name_hint">2~10个汉字英文、数字、下划线</string>
+    <string name="reg_re_location">地&#160;区&#160;</string>
+    <string name="reg_re_isorno">是否患者本人</string>
+    <string name="reg_name">手机号码</string>
+    <string name="reg_name_hint">请输入正确的手机号码</string>
+    <string name="reg_email_hint">验证码</string>
+
+    <!-- forget忘记密码文字 -->
+    <string name="forget_password_txt">找回密码</string>
+    <string name="forget_password_phoneoremail_txt">请输入手机号/邮箱账号</string>
+    <string name="forget_password_yancode_txt">请输入验证码</string>
+    <string name="forget_password_getcode_txt">获取验证码</string>
+    <string name="forget_password_nextbtn_txt">下一步</string>
+    <string name="settingnewpassword_hint_txt">新密码</string>
+    <string name="sure_settingnewpassword_hint_txt">再次确认</string>
+    <string name="sure_btn_sure">确定</string>
+    <!-- 咨询页面文字文字 -->
+    <string name="zixun_title">资&#160;讯</string>
+    <string name="zixun_content">详&#160;情</string>
+    <string name="qclass_title">轻&#160;课&#160;堂</string>
+    <string name="kecheng_title">课&#160;程</string>
+    <string name="question_title">问&#160;答</string>
+    <string name="qikan_title">期&#160;刊</string>
+    <!-- 微博页面文字文字 -->
+    <string name="web_title">微&#160;博</string>
+    <string name="web_aiti">&#160;我</string>
+    <string name="web_homepage">首页</string>
+    <string name="web_comment">评论</string>
+    <string name="web_collect">收藏</string>
+    <string name="web_search">搜索</string>
+    <string name="tab_1">首页</string>
+    <string name="tab_2">ai我</string>
+    <string name="tab_3">评论</string>
+    <string name="tab_4">收藏</string>
+    <string name="tab_5">搜索</string>
+    <string name="sort">欢迎来到轻客堂页面</string>
+    <string name="qikan">欢迎来到期刊页面</string>
+    <string name="zixun">欢迎来到咨询页面</string>
+    <string name="person">欢迎来到问答页面</string>
+    <string name="home_1">这是微博首页</string>
+    <string name="home_2">这是@我页面</string>
+    <string name="home_3">评论</string>
+    <string name="home_4">收藏</string>
+    <string name="home_5">搜索</string>
+    <!-- 自定义组件 -->
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">松开可以刷新</string>
+    <string name="lastUpdateTime">最近更新：%s</string>
+    <string name="load_full">已加载全部</string>
+    <string name="no_data">暂无数据</string>
+    <string name="more">更多</string>
+    <string name="delete">删除</string>
+    <string name="report">举报</string>
+
+    <!-- 消除警告，可忽略 -->
+    <string name="d">图片描述</string>
+    <!-- 问答文字 -->
+    <string name="question_title_txt">青稞网</string>
+    <string name="question_search_txt">搜索问答</string>
+    <string name="question_cancer_txt">癌症分类</string>
+    <string name="question_mywillask_txt">我要提问</string>
+    <string name="question_myask_txt">我的提问</string>
+    <string name="question_questionClassification_txt">癌症分类:</string>
+    <string name="question_lable_txt">标签：</string>
+    <string name="question_details_txt">问题详情</string>
+    <!-- 咨询文字 -->
+    <string name="zixun_tab_1">全部</string>
+    <string name="zixun_tab_2">认知</string>
+    <string name="zixun_tab_3">心理</string>
+    <string name="zixun_tab_4">锻炼</string>
+    <string name="zixun_tab_5">医疗</string>
+    <string name="zixun_tab_6">药物</string>
+    <string name="zixun_tab_7">饮食</string>
+    <!-- 青课堂文字 -->
+    <string name="qclass_tab_1">推荐</string>
+    <string name="qclass_tab_2">青词青谈</string>
+    <string name="qclass_tab_3">本草物语</string>
+    <string name="qclass_tab_4">饮食笔记</string>
+    <string name="qclass_tab_5">养生抄</string>
+
+    <string-array name="site_url">
+        <item>www.qingko.com/</item>
+        <item>/index.php</item>
+    </string-array>
+    <string name="title_activity_bd">BDActivity</string>
+    <!-- 下拉刷新 以及上拉加载更多的文字 -->
+    <string name="btn_scroll_view">ScrollView demo</string>
+    <string name="btn_list_view">ListView demo</string>
+    <string name="header_hint_refresh_normal"></string>
+    <string name="header_hint_refresh_ready">下拉刷新</string>
+    <string name="header_hint_refresh_loading">刷新中</string>
+    <string name="header_hint_refresh_time">上次刷新时间：</string>
+    <string name="footer_hint_load_normal">加载更多</string>
+    <string name="footer_hint_load_ready">加载中</string>
+
+    <!-- 用药提醒弹出框文字 -->
+    <string name="alert_daily_everydaty">每天</string>
+    <string name="alert_daily_two">每2天</string>
+    <string name="alert_daily_three">每3天</string>
+    <string name="alert_daily_four">每4天</string>
+    <string name="alert_daily_five">每5天</string>
+    <string name="alert_daily_sex">每6天</string>
+    <string name="alert_daily_seven">每7天</string>
+
+    <string name="alert_time_list_title">设置用药次数</string>
+    <string name="alert_time_username">用户或药品名为空</string>
+    <string name="alert_time_starttime">开始时间不正确</string>
+</resources>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_white_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_white_bg_color">
+
+        <LinearLayout
+            android:id="@+id/ll_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:layout_marginTop="@dimen/item_height"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/view_border_gray_white_0"
+                android:orientation="vertical"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/tv_date_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:background="@color/text_red"
+                    android:gravity="center"
+                    android:text="八月"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_small" />
+
+                <TextView
+                    android:id="@+id/tv_date_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="22"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_big" />
+
+                <TextView
+                    android:id="@+id/tv_date_week"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="SAT"
+                    android:textColor="@color/text_black"
+                    android:textSize="8sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_date_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/view_border_gray_gray_50"
+                android:text="2015"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_small" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_date_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="@dimen/margin_right_small"
+            android:layout_marginTop="@dimen/item_height"
+            android:layout_toRightOf="@id/ll_time_line"
+            android:background="@drawable/jinglibox">
+
+            <TextView
+                android:id="@+id/tv_date_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="@dimen/margin_top"
+                android:layout_marginTop="@dimen/margin_top"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="2"
+                android:text="1月31日1月31日1月31日1月31日1月31日1月31日1月31日1月31日1月31日1月31日1月31日1月31日1月31日1月31日1月31日1月31日1月31日"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <TextView
+                android:id="@+id/tv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_date_content"
+                android:layout_marginRight="@dimen/margin_top"
+                android:layout_marginTop="@dimen/margin_top"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="2"
+                android:text="[查看更多]"
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/text_common" />
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:layout_below="@id/tv_more"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@color/main_gray_color" />
+
+            <TextView
+                android:id="@+id/tv_howmany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_line"
+                android:layout_marginLeft="18dp"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_bottom"
+                android:paddingTop="@dimen/margin_top"
+                android:text="第9篇"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_small" />
+
+            <RelativeLayout
+                android:id="@+id/rl_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/view_line"
+                android:padding="@dimen/margin_left_small">
+
+                <ImageView
+                    android:id="@+id/iv_hand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/zanicon" />
+
+                <TextView
+                    android:id="@+id/tv_zhengnengliang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_small"
+                    android:layout_toRightOf="@id/iv_hand"
+                    android:text="正能量(9)"
+                    android:textColor="@color/text_more_gray"
+                    android:textSize="@dimen/text_small" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_time_line"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/rl_date_content"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:layout_toRightOf="@+id/ll_date"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="@dimen/line_height"
+                android:layout_height="60dp"
+                android:background="@color/main_gray_color" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shijianzhouyuanicon" />
+
+            <View
+                android:layout_width="@dimen/line_height"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/main_gray_color" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

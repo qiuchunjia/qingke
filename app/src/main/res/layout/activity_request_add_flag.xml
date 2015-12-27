@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white_pure_color">
+
+    <TextView
+        android:id="@+id/tv_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_left_small"
+        android:text="根据你的问题，推荐以下标签，最多选择3个:"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_prompt">
+
+        <LinearLayout
+            android:id="@+id/ll_add_flag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_white_bg_color"
+        android:paddingBottom="@dimen/margin_bottom"
+        android:paddingLeft="@dimen/margin_left_small"
+        android:paddingRight="@dimen/margin_right_small"
+        android:paddingTop="@dimen/margin_left_small">
+
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/view_border_green_solid_3"
+            android:gravity="center"
+            android:text="添加"
+            android:textColor="@color/text_white" />
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_small"
+            android:layout_toLeftOf="@id/tv_add"
+            android:background="@drawable/view_border_gray_white_3"
+            android:hint="添加标签"
+            android:paddingLeft="5dp"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_common" />
+    </RelativeLayout>
+
+</RelativeLayout>

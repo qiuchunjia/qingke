@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/main_white_pure_color"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <qcjlibrary.widget.RoundImageView
+                android:id="@+id/iv_cancer_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_left_small"
+                android:layout_marginTop="@dimen/margin_top_big"
+                android:src="@drawable/feiai" />
+
+            <TextView
+                android:id="@+id/tv_cancer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/iv_cancer_icon"
+                android:layout_marginLeft="@dimen/margin_left_small"
+                android:layout_toRightOf="@id/iv_cancer_icon"
+                android:text="肺癌"
+                android:textColor="@color/text_green"
+                android:textSize="@dimen/text_big" />
+
+            <TextView
+                android:id="@+id/tv_cancer_numer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_cancer_name"
+                android:layout_marginLeft="@dimen/margin_left_small"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/iv_cancer_icon"
+                android:text="成员：25"
+                android:textColor="@color/text_more_gray"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:id="@+id/tv_cancer_experence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_cancer_numer"
+                android:layout_marginLeft="@dimen/margin_left_small"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/iv_cancer_icon"
+                android:text="经历：19"
+                android:textColor="@color/text_more_gray"
+                android:textSize="@dimen/text_small" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_line_hor" />
+
+        <RelativeLayout
+            android:id="@+id/rl_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="1.0">
+
+            <qcjlibrary.widget.RoundImageView
+                android:id="@+id/iv_cancer_icon2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_left_small"
+                android:layout_marginTop="@dimen/margin_top_big"
+                android:src="@drawable/feiai" />
+
+            <TextView
+                android:id="@+id/tv_cancer_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/iv_cancer_icon2"
+                android:layout_marginLeft="@dimen/margin_left_small"
+                android:layout_toRightOf="@id/iv_cancer_icon2"
+                android:text="肺癌"
+                android:textColor="@color/text_green"
+                android:textSize="@dimen/text_big" />
+
+            <TextView
+                android:id="@+id/tv_cancer_numer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_cancer_name2"
+                android:layout_marginLeft="@dimen/margin_left_small"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/iv_cancer_icon2"
+                android:text="成员：25"
+                android:textColor="@color/text_more_gray"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:id="@+id/tv_cancer_experence2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_cancer_numer2"
+                android:layout_marginLeft="@dimen/margin_left_small"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/iv_cancer_icon2"
+                android:text="经历：19"
+                android:textColor="@color/text_more_gray"
+                android:textSize="@dimen/text_small" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhiyicx.zycx.sociax.component.LoadingView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/itemColor"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/searchbarColor">
+
+            <com.zhiyicx.zycx.sociax.component.EditCancel
+                android:id="@+id/editCancel1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="@dimen/body_margin_left"
+                android:layout_marginRight="@dimen/body_margin_left"
+                android:layout_marginTop="4dp"></com.zhiyicx.zycx.sociax.component.EditCancel>
+        </LinearLayout>
+
+        <com.zhiyicx.zycx.sociax.component.AtContactList
+            android:id="@+id/find_userList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+</LinearLayout>

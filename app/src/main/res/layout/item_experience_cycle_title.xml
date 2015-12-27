@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_white_pure_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/main_white_pure_color"
+        android:paddingLeft="@dimen/margin_left_small"
+        android:paddingRight="@dimen/margin_right_small">
+
+        <TextView
+            android:id="@+id/tv_cycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_big"
+            android:text="我的抗癌经历"
+            android:textColor="@color/text_green"
+            android:textSize="@dimen/text_very_big" />
+
+        <qcjlibrary.widget.RoundImageView
+            android:id="@+id/iv_cycle_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/tv_cycle"
+            android:layout_marginTop="@dimen/margin_top_big"
+            android:src="@drawable/default_image_small" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_cycle"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginTop="@dimen/margin_top_big"
+            android:layout_toRightOf="@id/iv_cycle_icon"
+            android:text="呵呵哒"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_common" />
+
+        <TextView
+            android:id="@+id/tv_has_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_username"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="已更新9篇"
+            android:textColor="@color/text_more_gray"
+            android:textSize="@dimen/text_small" />
+
+        <LinearLayout
+            android:id="@+id/ll_flag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_username"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_toRightOf="@id/iv_cycle_icon"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标签:"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_common" />
+
+            <TextView
+                android:id="@+id/tv_flag_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="乳房"
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/text_common" />
+
+            <TextView
+                android:id="@+id/tv_flag_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_small"
+                android:text="乳腺癌"
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/text_common" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_flag"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_toRightOf="@id/iv_cycle_icon"
+            android:text="主贴更新："
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_common" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_flag"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_toRightOf="@id/tv_update"
+            android:text="2015-06-12 14:40"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_common" />
+    </RelativeLayout>
+
+</LinearLayout>

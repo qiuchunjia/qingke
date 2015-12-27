@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_white_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="@dimen/margin_left_small"
+        android:layout_marginRight="@dimen/margin_right_small"
+        android:background="@color/main_white_pure_color">
+
+        <ImageView
+            android:id="@+id/iv_medicine_notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:src="@drawable/tixing" />
+
+        <TextView
+            android:id="@+id/tv_medicine_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_toRightOf="@id/iv_medicine_notify"
+            android:text="新康泰克"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_very_big" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_medicine_name"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_toRightOf="@id/iv_medicine_notify"
+            android:text="张三"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_common" />
+
+        <TextView
+            android:id="@+id/tv_user_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_medicine_name"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/iv_medicine_notify"
+            android:text="每天一次"
+            android:textColor="@color/text_more_gray"
+            android:textSize="@dimen/text_small" />
+    </RelativeLayout>
+
+</LinearLayout>

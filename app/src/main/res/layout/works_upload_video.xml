@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_upload_video"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/vedio_iv_big_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/default_image_small"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/vedio_iv_start"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/video03"
+        android:visibility="visible" />
+
+</FrameLayout>

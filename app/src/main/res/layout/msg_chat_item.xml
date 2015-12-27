@@ -1,0 +1,115 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white_bg_color">
+
+    <!-- 左边聊天的界面 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_left_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_left_small"
+        android:visibility="gone">
+
+        <qcjlibrary.widget.RoundImageView
+            android:id="@+id/iv_left_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_image_small" />
+
+        <TextView
+            android:id="@+id/tv_left_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_left_icon"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:layout_toRightOf="@id/iv_left_icon"
+            android:text="呵呵哒"
+            android:textColor="@color/text_more_gray"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/tv_left_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_left_icon"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv_left_name"
+            android:text="12:22"
+            android:textColor="@color/text_more_gray"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/tv_left_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_left_name"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_toRightOf="@id/iv_left_icon"
+            android:background="@drawable/gay_pop_1"
+            android:gravity="left"
+            android:padding="@dimen/margin_left_small"
+            android:text="别客气，往死里打"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_big" />
+    </RelativeLayout>
+
+    <!-- 右边聊天的界面 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_right_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_left_small"
+        android:visibility="gone">
+
+        <qcjlibrary.widget.RoundImageView
+            android:id="@+id/iv_right_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_image_small" />
+
+        <TextView
+            android:id="@+id/tv_right_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_right_icon"
+            android:layout_marginRight="@dimen/margin_left_small"
+            android:layout_toLeftOf="@id/iv_right_icon"
+            android:text="12:22"
+            android:textColor="@color/text_more_gray"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/tv_right_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_right_icon"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/tv_right_time"
+            android:text="我"
+            android:textColor="@color/text_more_gray"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/tv_right_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_right_name"
+            android:layout_marginRight="@dimen/margin_left_small"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_toLeftOf="@id/iv_right_icon"
+            android:background="@drawable/red_pop_1"
+            android:gravity="left"
+            android:padding="@dimen/margin_left_small"
+            android:text="别客气，往死里打"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_big" />
+    </RelativeLayout>
+
+</FrameLayout>

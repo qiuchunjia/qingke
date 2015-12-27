@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/txt_new"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/menu_item_bg"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:text="最新" />
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="1dp"
+        android:background="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/txt_hot"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/menu_item_bg"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:text="最热" />
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="1dp"
+        android:background="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/txt_my"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/menu_item_bg"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:text="我的" />
+
+</LinearLayout>

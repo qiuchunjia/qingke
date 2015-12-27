@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar">
+
+        <LinearLayout
+            android:id="@+id/btn_sel"
+            style="@style/leftButton"
+            android:clickable="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txt_status"
+                style="@style/leftButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="最新" />
+
+            <ImageView
+                android:id="@+id/arrow_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/arrow_do" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/title"
+            android:layout_centerInParent="true"
+            android:text="@string/qclass_title" />
+
+        <Button
+            android:id="@+id/btn_search"
+            style="@style/rightButton"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="搜索" />
+    </RelativeLayout>
+
+    <com.zhiyicx.zycx.widget.PagerSlidingTabStrip
+        android:id="@+id/sliding_tabs"
+        android:background="#E3EDEB"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <com.zhiyicx.zycx.sociax.component.LoadingView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="#ffffff"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

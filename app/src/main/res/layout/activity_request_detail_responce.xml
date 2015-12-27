@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white_bg_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/item_height_50"
+        android:background="@color/main_white_bg_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_white_bg_color"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_white_pure_color"
+                android:paddingBottom="@dimen/margin_bottom_big"
+                android:paddingLeft="@dimen/margin_left_small"
+                android:paddingRight="@dimen/margin_right_small">
+
+                <qcjlibrary.widget.RoundImageView
+                    android:id="@+id/riv_other_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/margin_top_big"
+                    android:src="@drawable/default_image_small" />
+
+                <TextView
+                    android:id="@+id/tv_other_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/riv_other_icon"
+                    android:layout_marginLeft="@dimen/margin_left_small"
+                    android:layout_toRightOf="@id/riv_other_icon"
+                    android:text="呵呵哒"
+                    android:textColor="@color/text_user"
+                    android:textSize="@dimen/text_common" />
+
+                <TextView
+                    android:id="@+id/tv_other_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_other_username"
+                    android:layout_marginLeft="@dimen/margin_left_small"
+                    android:layout_marginTop="@dimen/margin_left"
+                    android:layout_toRightOf="@id/riv_other_icon"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:lineSpacingExtra="@dimen/text_lineSpacingExtra"
+                    android:maxLines="3"
+                    android:text="前段时间发现呵呵哒，法打飞机来得及发垃圾的客服进阿凡达了房间萨洛克大家付"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_common" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/tv_other_username">
+
+                    <TextView
+                        android:id="@+id/tv_other_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_small"
+                        android:layout_marginRight="@dimen/margin_right_small"
+                        android:text="08月04日  10:22"
+                        android:textColor="@color/text_more_gray"
+                        android:textSize="@dimen/text_small" />
+                </FrameLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_replay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_small"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:text="全部评论"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+                <!-- 其它评论区 -->
+
+                <LinearLayout
+                    android:id="@+id/ll_replay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"></LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/main_white_pure_color"
+        android:paddingBottom="@dimen/margin_bottom"
+        android:paddingLeft="@dimen/margin_left_small"
+        android:paddingRight="@dimen/margin_right_small"
+        android:paddingTop="@dimen/margin_left_small">
+
+        <TextView
+            android:id="@+id/tv_send"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/view_border_green_solid_3"
+            android:gravity="center"
+            android:text="评论"
+            android:textColor="@color/text_white" />
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_small"
+            android:layout_toLeftOf="@id/tv_send"
+            android:background="@drawable/view_border_gray_white_3"
+            android:hint="说点什么"
+            android:paddingLeft="5dp"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_common" />
+    </RelativeLayout>
+
+</FrameLayout>

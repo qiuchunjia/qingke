@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_white_pure_color"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_left_small"
+    android:paddingRight="@dimen/margin_right_small">
+
+    <ImageView
+        android:id="@+id/iv_perio_icon"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_image_small" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_50"
+        android:background="@color/main_white_pure_color">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:text="癌友日记"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_big" />
+
+        <ImageView
+            android:id="@+id/iv_flag"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_toRightOf="@id/tv_title"
+            android:src="@drawable/tag" />
+
+        <TextView
+            android:id="@+id/tv_title_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/iv_flag"
+            android:text="第九期"
+            android:textColor="@color/text_yellow"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right_small"
+            android:text="2014-12-27"
+            android:textColor="@color/text_more_gray"
+            android:textSize="@dimen/text_small" />
+    </RelativeLayout>
+
+</LinearLayout>

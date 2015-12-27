@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white_bg_color"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_left_small">
+
+    <TextView
+        android:id="@+id/tv_system_notify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="系统通知标题"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_very_big" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="2015/07/12"
+        android:textColor="@color/text_more_gray"
+        android:textSize="@dimen/text_small" />
+
+    <TextView
+        android:id="@+id/tv_notify_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="癌症有多种多样，检查方法也多种多样"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/text_small" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_big"
+        android:lineSpacingExtra="@dimen/text_lineSpacingExtra"
+        android:text="内容"
+        android:textColor="@color/text_gray"
+        android:visibility="gone" />
+
+
+</LinearLayout>

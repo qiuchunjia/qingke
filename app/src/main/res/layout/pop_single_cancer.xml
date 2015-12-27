@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white_pure_color"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_bottom_big">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/main_white_pure_color"
+        android:padding="@dimen/margin_left_small">
+
+        <qcjlibrary.widget.RoundImageView
+            android:id="@+id/iv_cancer_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/feiai" />
+
+        <TextView
+            android:id="@+id/tv_cancer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_right"
+            android:layout_toRightOf="@id/iv_cancer_icon"
+            android:text="肺癌"
+            android:textColor="@color/text_green"
+            android:textSize="@dimen/text_big" />
+
+        <ImageView
+            android:id="@+id/iv_bottom_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/shousuoicon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_cancer_bangzhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:text="帮主："
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_common" />
+
+        <TextView
+            android:id="@+id/tv_cancer_bangzhuvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:layout_toRightOf="@id/tv_cancer_bangzhu"
+            android:text="暂无"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_common" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_top"
+        android:layout_marginTop="@dimen/margin_top">
+
+        <TextView
+            android:id="@+id/tv_cancer_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:text="成员："
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_common" />
+
+        <TextView
+            android:id="@+id/tv_cancer_membervalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_cancer_member"
+            android:text="24"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_common" />
+
+        <TextView
+            android:id="@+id/tv_cancer_experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="经历："
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_common" />
+
+        <TextView
+            android:id="@+id/tv_cancer_experiencevalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_cancer_experience"
+            android:text="19"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_common" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_cancer_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_small"
+        android:layout_marginRight="@dimen/margin_right_small"
+        android:text="成员费解啊的客服机读卡实际放卡死的积分卡的数据发生的风纪扣撒的剑法的链接！"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_common" />
+
+</LinearLayout>

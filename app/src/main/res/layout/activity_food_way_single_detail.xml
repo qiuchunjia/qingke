@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white_pure_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_white_pure_color"
+        android:orientation="vertical"
+        android:paddingBottom="40dp">
+
+        <!-- title部分 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_left_small">
+
+            <TextView
+                android:id="@+id/tv_food_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="玉米"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_very_big" />
+
+            <TextView
+                android:id="@+id/tv_food_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_food_name"
+                android:layout_toRightOf="@id/tv_food_name"
+                android:text="(食疗方)"
+                android:textColor="@color/text_more_gray"
+                android:textSize="@dimen/text_common" />
+
+            <ImageView
+                android:id="@+id/iv_food_icon"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                android:layout_below="@+id/tv_food_category"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_top_big"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_image_small"
+                android:textColor="@color/text_more_gray"
+                android:textSize="@dimen/text_common" />
+
+            <TextView
+                android:id="@+id/tv_food_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_food_icon"
+                android:layout_marginTop="@dimen/margin_top_big"
+                android:text="主要组成："
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_big" />
+
+            <RelativeLayout
+                android:id="@+id/rl_contain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_food_main"
+                android:layout_marginTop="@dimen/margin_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/view_border_gray_50"
+                    android:text="生姜"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_common" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:background="@color/main_gray_color" />
+        <!-- 功能，抗药功效 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_left_small">
+
+            <TextView
+                android:id="@+id/tv_function_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="功效/抗癌机理："
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_big" />
+
+            <!-- 添加功能按钮的布局 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_funtion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_function_main"
+                android:layout_marginTop="@dimen/margin_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/view_border_gray_50"
+                    android:text="调中健胃"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_common" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:background="@color/main_gray_color" />
+        <!-- 功能，抗药功效 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_left_small">
+
+            <TextView
+                android:id="@+id/tv_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="适用癌症/症状："
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_big" />
+
+            <TextView
+                android:id="@+id/tv_category_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_category"
+                android:layout_marginTop="@dimen/margin_top"
+                android:lineSpacingExtra="@dimen/text_lineSpacingExtra"
+                android:text="所有癌种"
+                android:textColor="@color/text_more_gray"
+                android:textSize="@dimen/text_common" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:background="@color/main_gray_color" />
+        <!-- 食用方法 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_left_small">
+
+            <TextView
+                android:id="@+id/tv_food_way"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="食用方法："
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_big" />
+
+            <TextView
+                android:id="@+id/tv_food_way_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_food_way"
+                android:layout_marginTop="@dimen/margin_top"
+                android:lineSpacingExtra="@dimen/text_lineSpacingExtra"
+                android:text="与豆类搭配，不可长期作为单类使用，不要吃霉变玉米。"
+                android:textColor="@color/text_more_gray"
+                android:textSize="@dimen/text_common" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:background="@color/main_gray_color" />
+        <!-- 食用方法 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_left_small">
+
+            <TextView
+                android:id="@+id/tv_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="食用宜忌："
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_big" />
+
+            <LinearLayout
+                android:id="@+id/ll_comfort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_notice"
+                android:layout_marginTop="@dimen/margin_top_big"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_smiling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/smiling" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_smiling"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="@dimen/margin_top"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:text="适应人群"
+                        android:textColor="@color/text_green"
+                        android:textSize="@dimen/text_common" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yijibox"
+                    android:paddingBottom="@dimen/margin_bottom"
+                    android:paddingLeft="@dimen/margin_left"
+                    android:paddingRight="@dimen/margin_left_small"
+                    android:paddingTop="@dimen/margin_top">
+
+                    <TextView
+                        android:id="@+id/tv_flag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="所有人群"
+                        android:textColor="@color/text_more_gray"
+                        android:textSize="@dimen/text_common" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_no_comfort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_comfort"
+                android:layout_marginTop="@dimen/margin_top_big"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_sad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/sad" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_sad"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="@dimen/margin_top"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:text="禁忌人群" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yijibox"
+                    android:paddingBottom="@dimen/margin_bottom"
+                    android:paddingLeft="@dimen/margin_left"
+                    android:paddingRight="@dimen/margin_left_small"
+                    android:paddingTop="@dimen/margin_top">
+
+                    <TextView
+                        android:id="@+id/tv_flag2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="无"
+                        android:textColor="@color/text_more_gray"
+                        android:textSize="@dimen/text_common" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_left_small">
+
+            <TextView
+                android:id="@+id/tv_relate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="相关食材："
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_big" />
+
+            <LinearLayout
+                android:id="@+id/ll_food_relate1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_relate"
+                android:layout_marginTop="@dimen/margin_top"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_relate1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/view_border_gray_3"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/default_image_small" />
+
+                    <TextView
+                        android:id="@+id/tv_relate1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/iv_relate1"
+                        android:text="呵呵哒"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_big" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_relate2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/view_border_gray_3"
+
+                        android:scaleType="centerCrop"
+
+                        android:src="@drawable/default_image_small" />
+
+                    <TextView
+                        android:id="@+id/tv_relate2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/iv_relate2"
+                        android:text="呵呵哒"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_big" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_food_relate2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_food_relate1"
+                android:layout_marginTop="@dimen/margin_top"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_relate3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/view_border_gray_3"
+
+                        android:scaleType="centerCrop"
+
+                        android:src="@drawable/default_image_small" />
+
+                    <TextView
+                        android:id="@+id/tv_relate3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/iv_relate3"
+                        android:text="呵呵哒"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_big" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_relate4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/view_border_gray_3"
+                        android:src="@drawable/default_image_small" />
+
+                    <TextView
+                        android:id="@+id/tv_relate4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/iv_relate4"
+                        android:text="呵呵哒"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_big" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

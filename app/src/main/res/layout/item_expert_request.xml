@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_white_pure_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_big">
+
+        <!-- 问题 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_quesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_q"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left_small"
+                android:src="@drawable/q" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left_small"
+                android:layout_toRightOf="@id/iv_q"
+                android:text="肺癌晚期怎么治？"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_big" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_quesion"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:layout_marginTop="@dimen/margin_top"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="胸部的磁共振结果如何？如果结果都没有出现转移"
+            android:textColor="@color/text_more_gray"
+            android:textSize="@dimen/text_big" />
+    </RelativeLayout>
+    <!-- 专家回复 -->
+
+    <TextView
+        android:id="@+id/tv_expert_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_small"
+        android:layout_marginRight="@dimen/margin_right_small"
+        android:layout_marginTop="@dimen/margin_top"
+        android:background="@color/main_white_bg_color"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingBottom="@dimen/margin_bottom"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="@dimen/margin_top"
+        android:text="专家建议：胸部的磁共振结果如何?如果结果都没有出现转移"
+        android:textColor="@color/text_more_gray"
+        android:textSize="@dimen/text_common" />
+    <!-- 尾部 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_footer"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:text="08月17日 11:15"
+            android:textColor="@color/text_more_gray"
+            android:textSize="@dimen/text_small" />
+
+        <FrameLayout
+            android:id="@+id/fl_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <!-- 选择同意框 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/margin_right_small"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_left_small"
+                    android:src="@drawable/manyi" />
+
+                <ImageView
+                    android:id="@+id/iv_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_yes"
+                    android:src="@drawable/bumanyi" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/margin_right_small"
+                android:drawableLeft="@drawable/gou"
+                android:drawablePadding="5dp"
+                android:text="满意评价"
+                android:textColor="@color/text_green"
+                android:textSize="@dimen/text_small"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_noagree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/margin_right_small"
+                android:drawableLeft="@drawable/cha"
+                android:drawablePadding="5dp"
+                android:text="不满意评价"
+                android:textColor="@color/text_red"
+                android:textSize="@dimen/text_small" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_white_bg_color"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_bottom"
+    android:paddingTop="@dimen/margin_top">
+
+    <RadioGroup
+        android:id="@+id/rg_alert_daily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_left"
+        android:paddingRight="@dimen/margin_right">
+
+        <RadioButton
+            android:id="@+id/rb_alert_everyday"
+            style="@style/radio_button"
+            android:text="@string/alert_daily_everydaty"
+            android:textSize="@dimen/text_common" />
+
+        <RadioButton
+            android:id="@+id/rb_alert_two"
+            style="@style/radio_button"
+            android:text="@string/alert_daily_two"
+            android:textSize="@dimen/text_common" />
+
+        <RadioButton
+            android:id="@+id/rb_alert_three"
+            style="@style/radio_button"
+            android:text="@string/alert_daily_three"
+            android:textSize="@dimen/text_common" />
+
+        <RadioButton
+            android:id="@+id/rb_alert_four"
+            style="@style/radio_button"
+            android:text="@string/alert_daily_four"
+            android:textSize="@dimen/text_common" />
+
+        <RadioButton
+            android:id="@+id/rb_alert_five"
+            style="@style/radio_button"
+            android:text="@string/alert_daily_five"
+            android:textSize="@dimen/text_common" />
+
+        <RadioButton
+            android:id="@+id/rb_alert_sex"
+            style="@style/radio_button"
+            android:paddingLeft="@dimen/body_margin_left_new"
+            android:text="@string/alert_daily_sex"
+            android:textSize="@dimen/text_common" />
+
+        <RadioButton
+            android:id="@+id/rb_alert_seven"
+            style="@style/radio_button"
+            android:text="@string/alert_daily_seven"
+            android:textSize="@dimen/text_common" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_alert_check"
+        style="@style/check_button"
+        android:layout_below="@id/rg_alert_daily"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

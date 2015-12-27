@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height_50"
+    android:background="@color/main_white_pure_color"
+    android:paddingLeft="@dimen/margin_left_small">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_50"
+        android:background="@color/main_white_pure_color">
+
+        <TextView
+            android:id="@+id/tv_foot_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="萝卜类"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_big" />
+
+        <ImageView
+            android:id="@+id/iv_right_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right_small"
+            android:src="@drawable/arrows_right" />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right_small"
+            android:layout_toLeftOf="@id/iv_right_x"
+            android:text="10"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_common" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/main_gray_color" />
+    </RelativeLayout>
+
+</RelativeLayout>

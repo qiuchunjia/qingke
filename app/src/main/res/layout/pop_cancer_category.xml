@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:alpha="0.98"
+    android:background="@color/main_white_bg_color"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_left_small"
+    android:paddingRight="@dimen/margin_right_small">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="癌种分类"
+        android:textColor="@color/text_green"
+        android:textSize="@dimen/text_very_big" />
+
+    <GridView
+        android:id="@+id/gv_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:horizontalSpacing="@dimen/margin_left_small"
+        android:numColumns="2"
+        android:verticalSpacing="@dimen/margin_left_small"></GridView>
+
+</LinearLayout>

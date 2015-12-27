@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_white_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_white_pure_color"
+        android:paddingLeft="@dimen/margin_left_small"
+        android:paddingRight="@dimen/margin_right_small"
+        android:paddingTop="@dimen/margin_top">
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_image_small" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_photo"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/iv_photo"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/text_lineSpacingExtra"
+            android:maxLines="2"
+            android:text="的房间里发间撒的积分卡实际放大家富士达"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_common" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_photo"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:layout_toRightOf="@id/iv_photo"
+            android:text="10月12日"
+            android:textColor="@color/text_more_gray"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/tv_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_photo"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:layout_toRightOf="@id/tv_date"
+            android:text="来自:鱼儿们"
+            android:textColor="@color/text_more_gray"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_photo"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/liulanliang"
+            android:drawablePadding="5dp"
+            android:text="2"
+            android:textColor="@color/text_more_gray"
+            android:textSize="@dimen/text_small" />
+    </RelativeLayout>
+
+</LinearLayout>

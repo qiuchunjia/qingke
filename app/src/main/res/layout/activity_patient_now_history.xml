@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white_pure_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_white_pure_color"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_bottom_big">
+
+        <LinearLayout
+            android:id="@+id/rl_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_white_pure_color"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_check_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_small"
+                android:layout_marginTop="@dimen/margin_left_small"
+                android:text="诊断过程"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_very_big" />
+
+            <RelativeLayout
+                android:id="@+id/rl_check_time"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/main_white_pure_color"
+                android:padding="@dimen/margin_left_small">
+
+                <TextView
+                    android:id="@+id/tv_check_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="诊断起始时间"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+
+                <TextView
+                    android:id="@+id/tv_check_time_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_check_time"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:text="2015-5"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/tv_check_time_name"
+                    android:src="@drawable/arrows_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_line_vertical_margin_10" />
+
+            <RelativeLayout
+                android:id="@+id/rl_check_time1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/main_white_pure_color"
+                android:padding="@dimen/margin_left_small">
+
+                <TextView
+                    android:id="@+id/tv_check_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="诊断结束时间"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+
+                <TextView
+                    android:id="@+id/tv_check_end_time_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_check_end_time"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:text="2015-8"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/tv_check_end_time_name"
+                    android:src="@drawable/arrows_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_line_vertical_margin_10" />
+
+            <RelativeLayout
+                android:id="@+id/rl_check_hospital"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/main_white_pure_color"
+                android:padding="@dimen/margin_left_small">
+
+                <TextView
+                    android:id="@+id/tv_check_hospital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="医院"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_check_hospital"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:background="@null"
+                    android:hint="请输入医院"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_line_vertical_margin_10" />
+
+            <RelativeLayout
+                android:id="@+id/rl_check_way"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/main_white_pure_color"
+                android:padding="@dimen/margin_left_small">
+
+                <TextView
+                    android:id="@+id/tv_check_way"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="方式"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+
+                <TextView
+                    android:id="@+id/tv_check_way_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_check_way"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:text="ct片"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/tv_check_way_name"
+                    android:src="@drawable/arrows_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_line_vertical_margin_10" />
+
+            <RelativeLayout
+                android:id="@+id/rl_check_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_white_pure_color"
+                android:padding="@dimen/margin_left_small">
+
+                <HorizontalScrollView
+                    android:id="@+id/hsvScrollView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/ll_ScrollView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"></LinearLayout>
+                </HorizontalScrollView>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_lab_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_white_pure_color"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_lab_check_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_small"
+                android:layout_marginTop="@dimen/margin_left_small"
+                android:text="实验室检查"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_very_big" />
+
+            <RelativeLayout
+                android:id="@+id/rl_lab_check_project"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/main_white_pure_color"
+                android:padding="@dimen/margin_left_small">
+
+                <TextView
+                    android:id="@+id/tv_lab_check_project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="检查项目"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+
+                <TextView
+                    android:id="@+id/tv_lab_check_time_project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_lab_check_project"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:text="呵呵哒项目"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/tv_lab_check_time_project"
+                    android:src="@drawable/arrows_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_line_vertical_margin_10" />
+
+            <RelativeLayout
+                android:id="@+id/rl_lab_check_time1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/main_white_pure_color"
+                android:padding="@dimen/margin_left_small">
+
+                <TextView
+                    android:id="@+id/tv_lab_check_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="检查时间"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+
+                <TextView
+                    android:id="@+id/tv_lab_check_end_time_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_lab_check_end_time"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:text="2015-8"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/tv_lab_check_end_time_name"
+                    android:src="@drawable/arrows_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_line_vertical_margin_10" />
+
+            <RelativeLayout
+                android:id="@+id/rl_lab_check_hospital"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/main_white_pure_color"
+                android:padding="@dimen/margin_left_small">
+
+                <TextView
+                    android:id="@+id/tv_lab_check_hospital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="医院"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+
+                <EditText
+                    android:id="@+id/et_lab_checkname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_lab_check_hospital"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:background="@null"
+                    android:hint="请输入医院"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_line_vertical_margin_10" />
+
+            <RelativeLayout
+                android:id="@+id/rl_lab_check_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_white_pure_color"
+                android:padding="@dimen/margin_left_small">
+
+                <HorizontalScrollView
+                    android:id="@+id/hsvScrollView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/ll_ScrollView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"></LinearLayout>
+                </HorizontalScrollView>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_vedio_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_white_pure_color"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_vedio_check_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_small"
+                android:layout_marginTop="@dimen/margin_left_small"
+                android:text="影像学检查"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_very_big" />
+
+            <RelativeLayout
+                android:id="@+id/rl_vedio_check_project"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/main_white_pure_color"
+                android:padding="@dimen/margin_left_small">
+
+                <TextView
+                    android:id="@+id/tv_vedio_check_project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="检查项目"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+
+                <TextView
+                    android:id="@+id/tv_vedio_check_time_project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_vedio_check_project"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:text="呵呵哒项目"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/tv_vedio_check_time_project"
+                    android:src="@drawable/arrows_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_line_vertical_margin_10" />
+
+            <RelativeLayout
+                android:id="@+id/rl_vedio_check_time1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/main_white_pure_color"
+                android:padding="@dimen/margin_left_small">
+
+                <TextView
+                    android:id="@+id/tv_vedio_check_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="检查时间"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+
+                <TextView
+                    android:id="@+id/tv_vedio_check_end_time_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_vedio_check_end_time"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:text="2015-8"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/tv_vedio_check_end_time_name"
+                    android:src="@drawable/arrows_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_line_vertical_margin_10" />
+
+            <RelativeLayout
+                android:id="@+id/rl_vedio_check_hospital"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/main_white_pure_color"
+                android:padding="@dimen/margin_left_small">
+
+                <TextView
+                    android:id="@+id/tv_vedio_check_hospital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="医院"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+
+                <EditText
+                    android:id="@+id/et_vedio_checkname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_vedio_check_hospital"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:background="@null"
+                    android:hint="请输入医院"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_line_vertical_margin_10" />
+
+            <RelativeLayout
+                android:id="@+id/rl_vedio_check_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_white_pure_color"
+                android:padding="@dimen/margin_left_small">
+
+                <HorizontalScrollView
+                    android:id="@+id/hsvScrollView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/ll_ScrollView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"></LinearLayout>
+                </HorizontalScrollView>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

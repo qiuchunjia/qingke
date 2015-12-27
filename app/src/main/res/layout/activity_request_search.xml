@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white_pure_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_margin="@dimen/margin_left_small"
+        android:background="@drawable/view_border_gray_3"
+        android:paddingLeft="@dimen/margin_left_small"
+        android:paddingRight="@dimen/margin_right_small">
+
+        <ImageView
+            android:id="@+id/iv_zoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/shiliaosearch" />
+
+        <EditText
+            android:id="@+id/et_find"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_zoom"
+            android:background="@null"
+            android:hint="搜索问答"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_common" />
+    </RelativeLayout>
+
+    <include layout="@layout/listview_common_layout" />
+
+</LinearLayout>

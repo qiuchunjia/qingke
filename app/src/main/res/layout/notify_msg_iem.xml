@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#ffe">
+
+    <!-- 个人信息布局布局 -->
+
+    <FrameLayout
+        android:id="@+id/fl_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="#90e">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="2dp"
+            android:src="@drawable/ic_launcher" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fl_icon"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/fl_icon"
+        android:text="i牛牛哥"
+        android:textColor="#888"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_nick"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/fl_icon"
+        android:text="领的支付宝要爆炸了"
+        android:textColor="#000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/fl_icon"
+        android:layout_marginRight="10dp"
+        android:text="2015-5-23 20:23"
+        android:textColor="#888"
+        android:textSize="10sp" />
+
+</RelativeLayout>

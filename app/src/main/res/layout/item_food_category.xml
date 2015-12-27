@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_white_pure_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_white_pure_color"
+        android:paddingBottom="@dimen/margin_bottom_big"
+        android:paddingLeft="@dimen/margin_left_small"
+        android:paddingRight="@dimen/margin_right_small">
+
+        <ImageView
+            android:id="@+id/iv_food_icon"
+            android:layout_width="96dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_image_small" />
+
+        <TextView
+            android:id="@+id/tv_food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginTop="@dimen/margin_top_big"
+            android:layout_toRightOf="@id/iv_food_icon"
+            android:text="玉米"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_big" />
+
+        <TextView
+            android:id="@+id/tv_food_function"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_food_name"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_toRightOf="@id/iv_food_icon"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="功效：调中健脾，一品宁夏去参加基督教的绝佳的得紧紧的经得紧紧的"
+            android:textColor="@color/text_more_gray"
+            android:textSize="@dimen/text_common" />
+
+        <TextView
+            android:id="@+id/tv_cancer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_food_function"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_toRightOf="@id/iv_food_icon"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="针对癌种：所有癌症"
+            android:textColor="@color/text_more_gray"
+            android:textSize="@dimen/text_common" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginLeft="@dimen/margin_left_small"
+        android:background="@color/main_gray_color" />
+
+</LinearLayout>

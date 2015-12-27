@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/footbg"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp">
+
+            <EditText
+                android:id="@+id/edit_cmt"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                style="@style/cmtedit"
+                android:hint="说点什么吧"
+                android:layout_marginRight="5dp" />
+
+            <Button
+                android:id="@+id/btn_comment"
+                style="@style/rightButton"
+                android:text="发送" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

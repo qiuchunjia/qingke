@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white_bg_color"
+    android:orientation="vertical">
+
+    <!-- 我的应用 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_myapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:background="@color/main_white_pure_color">
+
+        <TextView
+            android:id="@+id/tv_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="我的应用"
+            android:textColor="@color/text_green"
+            android:textSize="@dimen/text_common" />
+
+        <LinearLayout
+            android:id="@+id/ll_notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_app"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="@dimen/margin_top_big"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+
+            <ImageView
+                android:id="@+id/iv_notify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/index_medicine_notify" />
+
+            <TextView
+                android:id="@+id/tv_notify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="用药提醒"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_app"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="@dimen/margin_top_big"
+            android:layout_toRightOf="@id/ll_notify"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+
+            <ImageView
+                android:id="@+id/iv_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/index_cook" />
+
+            <TextView
+                android:id="@+id/tv_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="食疗大全"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhiyicx.zycx"
+    android:installLocation="preferExternal"
+    android:versionCode="2"
+    android:versionName="1.1">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="10" />
+
+    <permission
+        android:name="com.zhiyicx.zycx.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.zhiyicx.zycx.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+
+    <!-- 曹立该添加，百度移动云相关权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- tan 开机广播接受权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <permission
+        android:protectionLevel="normal"
+        android:name="alert.music.permission"></permission>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true" />
+
+    <application
+        android:name=".sociax.android.Thinksns"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.GuideActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="551cd086fd98c543f5001185"></meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="bak3" />
+        <!-- 人人登录配置 -->
+        <activity
+            android:name="com.renn.rennsdk.oauth.OAuthActivity"
+            android:configChanges="orientation|navigation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity1"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ForgetPwdActivity1"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ForgetPwdActivity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AgreementActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZiXUnContentActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QClassDetailsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QClassPlayActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QiKanDetailsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QuestionDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PostQuestionActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sociax.android.weibo.WeiboAppActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sociax.android.weibo.WeiboSendActivity"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".sociax.android.weibo.WeiboCreateActivity"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".sociax.android.weibo.AtContactActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".sociax.android.weibo.AtTopicActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".sociax.android.weibo.WeiboContentList"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sociax.android.ThinksnsImageView"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sociax.android.user.ThinksnsUserInfo"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+
+        <!-- 分享编辑页 -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="1104001628" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- Required SDK 核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <!-- Required  显示通知栏 -->
+                <category android:name="com.zhiyicx.zycx" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.zhiyicx.zycx" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false"></service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="4927b7c619b005320903e5ff" />
+        <meta-data
+            android:name="client_id"
+            android:value="bf20bc0aca083ec6" />
+        <meta-data
+            android:name="client_secret"
+            android:value="d34ce7d56040bc1b0cfc2cc153901cb0" />
+
+        <!-- 曹立该添加，移动云AppX SDK -->
+        <activity android:name="com.baidu.appx.ui.BDInnerBrowser" />
+
+        <receiver android:name="com.baidu.appx.app_download.CompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+                <!-- 注意！！ 这句必须要加，否则接收不到安装完成广播 -->
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".BDActivity"
+            android:label="@string/title_activity_bd"></activity>
+
+        <!-- 癌友帮二期开发新增加页面 -->
+
+        <activity
+            android:name="com.zhiyicx.zycx.RegisterActivity2"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity android:name="qcjlibrary.activity.MeCenterActivity" />
+        <activity android:name="qcjlibrary.activity.MeCenterBasicActivity" />
+        <activity android:name="qcjlibrary.activity.MeAplicationActivity" />
+        <activity android:name="qcjlibrary.activity.ExpertRequestActivity" />
+        <activity android:name="qcjlibrary.activity.MsgNotifyPraiseActivity" />
+        <activity android:name="qcjlibrary.activity.MsgNotifyDetailActivity" />
+        <activity android:name="qcjlibrary.activity.MePerioActivity" />
+        <activity android:name="qcjlibrary.activity.FoodWayActivity" />
+        <activity android:name="qcjlibrary.activity.FoodCategoryActivity" />
+        <activity android:name="qcjlibrary.activity.FoodWaySingleDetail" />
+        <activity android:name="qcjlibrary.activity.FoodSingleDetailActivity" />
+        <activity android:name="qcjlibrary.activity.CaseHistoryActivity" />
+        <activity android:name="qcjlibrary.activity.CaseHistoryDetailActivity" />
+        <activity android:name="qcjlibrary.activity.PatientHistoryActivity" />
+        <activity android:name="qcjlibrary.activity.PatientInforActivity" />
+        <activity android:name="qcjlibrary.activity.PatientMeActivity" />
+        <activity android:name="qcjlibrary.activity.UseMedicineNotifyActivity" />
+        <activity android:name="qcjlibrary.activity.MedicineEditNotifyActivity" />
+        <activity android:name="qcjlibrary.activity.CancerSingleActivity" />
+        <activity android:name="qcjlibrary.activity.ExperienceCycleActivity" />
+        <activity android:name="qcjlibrary.activity.ExperienceSendActivity" />
+        <activity android:name="qcjlibrary.activity.ExperienceCycleDetail" />
+        <activity android:name="qcjlibrary.activity.RequestSendTopicActivity" />
+        <activity android:name="qcjlibrary.activity.RequestSendTopicCommitedActivity" />
+        <activity android:name="qcjlibrary.activity.RequestChooseCancerActivity" />
+        <activity android:name="qcjlibrary.activity.RequestWayActivity" />
+        <activity android:name="qcjlibrary.activity.RequestDetailCommonActivity" />
+        <activity android:name="qcjlibrary.activity.RequestDetailResponceActivity" />
+        <activity android:name="qcjlibrary.activity.RequestFlagActivity" />
+        <activity android:name="qcjlibrary.activity.RequestSearchActivity" />
+        <activity android:name="qcjlibrary.activity.ZhiXunFlagActivity" />
+        <activity android:name="qcjlibrary.activity.SearchNewActivity" />
+        <activity android:name="qcjlibrary.activity.UserAgreenmentActivity" />
+        <activity android:name="qcjlibrary.activity.SettingOneLineEditActivity" />
+        <activity android:name="qcjlibrary.activity.CancerCategoryActivity" />
+        <activity android:name="qcjlibrary.activity.RequestDetailReponceSingleActivity" />
+        <activity android:name="qcjlibrary.activity.RequestDetailExpertActivity" />
+        <activity android:name="qcjlibrary.activity.RequestAddFlagActivity" />
+        <activity android:name="qcjlibrary.activity.RequestMyAskActivity" />
+        <activity android:name="qcjlibrary.activity.MeChooseProvinceActivity" />
+        <activity android:name="qcjlibrary.activity.MeChooseCityActivity" />
+        <activity android:name="qcjlibrary.activity.MeChooseTowerActivity" />
+        <activity android:name="qcjlibrary.activity.MeChooseCancerActivity" />
+        <activity android:name="qcjlibrary.activity.LocalAlbumActivity" />
+        <activity android:name="qcjlibrary.activity.LocalImagListActivity" />
+        <activity android:name="qcjlibrary.activity.NotifySingleReplyActivity" />
+        <activity android:name="qcjlibrary.activity.ChooseNationActivity" />
+        <activity android:name="qcjlibrary.activity.ChooseEducationActivity" />
+        <activity android:name="qcjlibrary.activity.ChooseLabWayActivity" />
+        <activity android:name="qcjlibrary.activity.ChooseSurgeryWayActivity" />
+        <activity android:name="qcjlibrary.activity.ChooseTreatWayActivity" />
+        <activity android:name="qcjlibrary.activity.PatientNowHistoryActivity" />
+        <activity android:name="com.zhiyicx.zycx.activity.WebActivity">
+
+            <!-- 癌友帮二期开发新增加页面end -->
+        </activity>
+
+        <receiver android:name="qcjlibrary.broadcast.AlarmBroadCastReciever">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+                <action android:name="alarm.alert.short" />
+            </intent-filter>
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+            </intent-filter>
+        </receiver>
+
+
+        <service
+            android:name="qcjlibrary.service.AlertService"
+            android:permission="alert.music.permission">
+            <intent-filter>
+                <action android:name="alert_music" />
+            </intent-filter>
+
+        </service>
+
+    </application>
+
+
+</manifest>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/register_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/register_title" />
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:clickable="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="20dp"
+                android:background="@drawable/register_multiply" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/forget_password_txt"
+                android:textColor="@color/white_txt"
+                android:textSize="24sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/text_bg"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_forget_newpasswd"
+                android:layout_width="match_parent"
+                android:password="true"
+                android:layout_height="50dp"
+                android:inputType=""
+                android:background="@android:color/transparent"
+                android:hint="@string/settingnewpassword_hint_txt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/text_bg"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_forget_surenewpasswd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:password="true"
+                android:background="@android:color/transparent"
+                android:hint="@string/sure_settingnewpassword_hint_txt" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/IB_forgetSure"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/next_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/sure_btn_sure"
+                android:textColor="@color/white_txt"
+                android:textSize="24sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

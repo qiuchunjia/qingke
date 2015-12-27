@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white_bg_color"
+    android:orientation="vertical">
+
+    <!-- 头部信息 -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginTop="@dimen/margin_top"
+        android:background="@color/main_gray_color" />
+
+    <RelativeLayout
+        android:id="@+id/rl_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_white_pure_color"
+        android:paddingBottom="@dimen/margin_bottom"
+        android:paddingTop="@dimen/margin_top">
+
+        <qcjlibrary.widget.RoundImageView
+            android:id="@+id/riv_user_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:src="@drawable/default_image_small" />
+
+        <TextView
+            android:id="@+id/tv_userdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:layout_toRightOf="@id/riv_user_icon"
+            android:text="头像设置"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_big" />
+
+        <ImageView
+            android:id="@+id/iv_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_small"
+            android:src="@drawable/arrows_right"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_big" />
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_vertical" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginTop="@dimen/margin_top"
+        android:background="@color/main_gray_color" />
+    <!-- 首页 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_mycase"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/main_white_pure_color">
+
+        <TextView
+            android:id="@+id/tv_mycase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/iv_mycase"
+            android:text="抗癌宣言"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_big" />
+
+        <TextView
+            android:id="@+id/tv_mycase_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/iv_mycase"
+            android:text=""
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_big" />
+
+        <ImageView
+            android:id="@+id/iv_mycase_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_small"
+            android:src="@drawable/arrows_right"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_big" />
+
+        <TextView
+            android:id="@+id/tv_mycase_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="@dimen/margin_right_small"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@id/iv_mycase_x"
+            android:layout_toRightOf="@id/tv_mycase_space"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="开开心心过后每一天，为了身边的人"
+            android:textColor="@color/text_more_gray"
+            android:textSize="@dimen/text_common" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginLeft="@dimen/margin_left_small"
+        android:background="@color/main_gray_color" />
+    <!-- 我的提问 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_nick"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_50"
+        android:background="@color/main_white_pure_color">
+
+        <TextView
+            android:id="@+id/tv_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:layout_toRightOf="@id/iv_question"
+            android:text="昵称"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_big" />
+
+        <ImageView
+            android:id="@+id/iv_nick_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_small"
+            android:src="@drawable/arrows_right"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_big" />
+
+        <TextView
+            android:id="@+id/tv_nick_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_small"
+            android:layout_toLeftOf="@id/iv_nick_x"
+            android:text="呵呵哒"
+            android:textColor="@color/text_more_gray"
+            android:textSize="@dimen/text_common" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginLeft="@dimen/margin_left_small"
+        android:background="@color/main_gray_color" />
+    <!-- 我的应用 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_gender"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_50"
+        android:background="@color/main_white_pure_color">
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:text="性别"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_big" />
+
+        <ImageView
+            android:id="@+id/iv_gender_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_small"
+            android:src="@drawable/arrows_right"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_big" />
+
+        <TextView
+            android:id="@+id/tv_gender_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_small"
+            android:layout_toLeftOf="@id/iv_gender_x"
+            android:text="男"
+            android:textColor="@color/text_more_gray"
+            android:textSize="@dimen/text_common" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginLeft="@dimen/margin_left_small"
+        android:background="@color/main_gray_color" />
+    <!-- 我的圈子 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_birth"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_50"
+        android:background="@color/main_white_pure_color">
+
+        <TextView
+            android:id="@+id/tv_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:layout_toRightOf="@id/iv_cycle"
+            android:text="生日"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_big" />
+
+        <ImageView
+            android:id="@+id/iv_birth_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_small"
+            android:src="@drawable/arrows_right"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_big" />
+
+        <TextView
+            android:id="@+id/tv_birth_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_small"
+            android:layout_toLeftOf="@id/iv_birth_x"
+            android:text="1993-12-27"
+            android:textColor="@color/text_more_gray"
+            android:textSize="@dimen/text_common" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginLeft="@dimen/margin_left_small"
+        android:background="@color/main_gray_color" />
+    <!-- 我的期刊 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_50"
+        android:background="@color/main_white_pure_color">
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:layout_toRightOf="@id/iv_periodical"
+            android:text="地区"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_big" />
+
+        <ImageView
+            android:id="@+id/iv_address_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_small"
+            android:src="@drawable/arrows_right"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_big" />
+
+        <TextView
+            android:id="@+id/tv_address_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_small"
+            android:layout_toLeftOf="@id/iv_address_x"
+            android:text="四川成都"
+            android:textColor="@color/text_more_gray"
+            android:textSize="@dimen/text_common" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginLeft="@dimen/margin_left_small"
+        android:background="@color/main_gray_color" />
+
+    <RelativeLayout
+        android:id="@+id/rl_cancer_category"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_50"
+        android:background="@color/main_white_pure_color">
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:layout_toRightOf="@id/iv_periodical"
+            android:text="癌种"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_big" />
+
+        <ImageView
+            android:id="@+id/iv_category_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_small"
+            android:src="@drawable/arrows_right"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_big" />
+
+        <TextView
+            android:id="@+id/tv_category_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_small"
+            android:layout_toLeftOf="@id/iv_category_x"
+            android:text="乳腺癌"
+            android:textColor="@color/text_more_gray"
+            android:textSize="@dimen/text_common" />
+    </RelativeLayout>
+
+</LinearLayout>

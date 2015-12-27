@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/main_white_pure_color"
+        android:paddingLeft="@dimen/margin_left_small"
+        android:paddingRight="@dimen/margin_right_small">
+
+        <TextView
+            android:id="@+id/tv_topic_advice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/margin_top"
+            android:background="@drawable/view_border_blue_solid_3"
+            android:text="推荐"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_common" />
+
+        <TextView
+            android:id="@+id/tv_topic_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_big"
+            android:layout_toLeftOf="@id/tv_topic_advice"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="呵呵哒见附件看得见发卡桑德菲杰"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_big" />
+
+        <TextView
+            android:id="@+id/tv_topic_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_topic_title"
+            android:layout_marginTop="@dimen/margin_top_big"
+            android:text="人在江湖漂"
+            android:textColor="@color/text_more_gray"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/tv_topic_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_topic_user"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_toRightOf="@id/tv_topic_user"
+            android:text="已更新2篇"
+            android:textColor="@color/text_more_gray"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/tv_topic_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_topic_user"
+            android:layout_alignParentRight="true"
+            android:text="08-28 11:23"
+            android:textColor="@color/text_more_gray"
+            android:textSize="@dimen/text_small" />
+    </RelativeLayout>
+
+</LinearLayout>

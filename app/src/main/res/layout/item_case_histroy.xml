@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/main_white_bg_color">
+
+    <LinearLayout
+        android:id="@+id/ll_time_line"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_marginLeft="@dimen/item_height"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="@dimen/line_height"
+            android:layout_height="30dp"
+            android:background="@color/main_gray_color" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shijianzhouyuanicon" />
+
+        <View
+            android:layout_width="@dimen/line_height"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/main_gray_color" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/ll_time_line"
+        android:background="@color/main_white_pure_color"
+        android:padding="@dimen/margin_left_small">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加了实验室检查"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_common" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="6月24日  10：22"
+            android:textColor="@color/text_more_gray"
+            android:textSize="@dimen/text_small" />
+    </RelativeLayout>
+
+</RelativeLayout>
+

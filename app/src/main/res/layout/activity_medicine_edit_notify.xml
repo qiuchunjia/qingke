@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white_bg_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_white_bg_color"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/item_height_50">
+
+        <LinearLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/margin_left_small"
+            android:background="@drawable/view_border_gray_white_0"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_user"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="输入用药者"
+                android:paddingLeft="@dimen/margin_left"
+                android:paddingRight="@dimen/margin_right"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <include layout="@layout/view_line_vertical" />
+
+            <EditText
+                android:id="@+id/et_medicine_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="输入药物名称"
+                android:paddingLeft="@dimen/margin_left"
+                android:paddingRight="@dimen/margin_right"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_repeat"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:layout_marginRight="@dimen/margin_right_small"
+            android:background="@drawable/view_border_gray_white_0"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/view_border_gray_gray_0"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_eat_med_notity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:text="用药提醒"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+
+                <TextView
+                    android:id="@+id/tv_once"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:text="每天一次"
+                    android:textColor="@color/text_more_gray"
+                    android:textSize="@dimen/text_small" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_alert_repaet_daily"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/margin_left"
+                android:paddingRight="@dimen/margin_right">
+
+                <TextView
+                    android:id="@+id/tv_eat_med_repeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="重复"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+
+                <ImageView
+                    android:id="@+id/iv_eat_med_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/bianjiicon" />
+
+                <TextView
+                    android:id="@+id/tv_eat_med_repeatday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_right_small"
+                    android:layout_marginTop="15dp"
+                    android:layout_toLeftOf="@id/iv_eat_med_edit"
+                    android:text="每天"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_line_vertical" />
+
+            <RelativeLayout
+                android:id="@+id/rl_alert_repeat_time"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/margin_left"
+                android:paddingRight="@dimen/margin_right">
+
+                <TextView
+                    android:id="@+id/tv_eat_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="8: 00"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+
+                <ImageView
+                    android:id="@+id/iv_eat_time_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/bianjiicon" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:layout_marginRight="@dimen/margin_right_small"
+            android:layout_marginTop="@dimen/margin_top"
+            android:background="@drawable/view_border_gray_white_0"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/view_border_gray_gray_0"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_eat_med_notity2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:text="开始时间"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+            </LinearLayout>
+
+            <include layout="@layout/view_line_vertical" />
+
+            <RelativeLayout
+                android:id="@+id/rl_alert_starttime"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+
+                android:paddingLeft="@dimen/margin_left"
+                android:paddingRight="@dimen/margin_right">
+
+                <TextView
+                    android:id="@+id/tv_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="8: 00"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_common" />
+
+                <ImageView
+                    android:id="@+id/iv_start_time_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/bianjiicon" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/margin_left_small"
+            android:background="@color/main_white_pure_color"
+            android:paddingLeft="@dimen/margin_left"
+            android:paddingRight="@dimen/margin_right">
+
+            <TextView
+                android:id="@+id/tv_notify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="提醒"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <ImageView
+                android:id="@+id/iv_notify_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/switch_off" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

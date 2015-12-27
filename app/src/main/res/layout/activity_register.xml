@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white_bg_color">
+
+    <!-- 用户登陆模块 -->
+
+    <LinearLayout
+        android:id="@+id/rl_register"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="@dimen/margin_top_big"
+        android:background="@color/main_white_pure_color"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_usename"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/et_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_toRightOf="@id/iv_user"
+                android:background="@null"
+                android:hint="请输入手机号码"
+                android:textColorHint="@color/text_more_gray"
+                android:textSize="@dimen/text_common" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_line_vertical" />
+
+        <RelativeLayout
+            android:id="@+id/rl_vertify"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_vertify_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="发送验证码"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_common" />
+
+            <EditText
+                android:id="@+id/et_vertify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_toLeftOf="@id/tv_vertify_code"
+                android:background="@null"
+                android:hint="请输入手机验证码"
+                android:textColorHint="@color/text_more_gray"
+                android:textSize="@dimen/text_common" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_50"
+        android:layout_below="@id/rl_register"
+        android:layout_marginTop="@dimen/item_height"
+        android:background="@color/main_color"
+        android:text="下一步"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_very_big" />
+    <!-- 同意协议 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_agreenment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_next"
+        android:layout_marginTop="@dimen/item_height">
+
+        <ImageView
+            android:id="@+id/iv_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:src="@drawable/gouxuanicon" />
+
+        <TextView
+            android:id="@+id/tv_agreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/iv_choose"
+            android:text="我已阅读并同意"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/tv_user_agreenment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_agreen"
+            android:text="《青稞用户注册协议》"
+            android:textColor="@color/text_green"
+            android:textSize="@dimen/text_small" />
+    </RelativeLayout>
+
+</RelativeLayout>

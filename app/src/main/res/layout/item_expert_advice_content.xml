@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_white_pure_color"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_left">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="1.化疗对胃肠刺激很大"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_common" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:lineSpacingExtra="@dimen/text_lineSpacingExtra"
+        android:text="化疗对胃肠刺激很大疗对胃肠刺激很大化疗对胃肠刺激很大化疗对胃肠刺激很大化疗对胃肠刺激很大化疗对胃肠刺激很大化疗对胃肠刺激很大"
+        android:textColor="@color/text_more_gray"
+        android:textSize="@dimen/text_common" />
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height"
+    android:background="@color/main_color">
+
+    <!-- 左边布局 -->
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <!-- 左边布局第一种 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_left_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_title_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/margin_left_small"
+                android:src="@drawable/arrows_left" />
+
+            <TextView
+                android:id="@+id/tv_title_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_title_left"
+                android:text="返回"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_very_big" />
+        </RelativeLayout>
+        <!-- 左边布局第一种 -->
+        <!-- 左边布局第二种 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_left_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_title_left2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/margin_left_small"
+                android:src="@drawable/index_icon" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <!-- 中间的布局 -->
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="癌友帮"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_very_big"
+            android:visibility="visible" />
+        <!-- 中间两个控件的情况 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_twoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="通知"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_big" />
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_1"
+                android:gravity="center"
+                android:text="私信"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_big" />
+        </RelativeLayout>
+        <!-- 中间一个图片控件的情况 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_1_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_1_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/segmented_control_02" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <!-- 右边的布局 -->
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/tv_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/margin_right_small"
+            android:text=""
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_very_big" />
+
+        <ImageView
+            android:id="@+id/iv_title_right1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/margin_right_small"
+            android:src="@drawable/index"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_title_right2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/margin_right"
+            android:src="@drawable/index"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_title_right3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/index"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</RelativeLayout>

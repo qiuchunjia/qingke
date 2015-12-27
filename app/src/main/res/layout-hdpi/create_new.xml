@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/itemColor"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include layout="@layout/qcj_title" />
+
+    <com.zhiyicx.zycx.sociax.component.LoadingView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <EditText
+        android:id="@+id/send_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/main_white_bg_color"
+        android:gravity="top"
+        android:hint="@string/send_not_content"
+        android:inputType="textMultiLine"
+        android:padding="8dp"
+        android:textColor="@color/font"
+        android:textSize="@dimen/fontSize">
+
+        <requestFocus></requestFocus>
+    </EditText>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_white_bg_color"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp">
+
+        <ImageView
+            android:id="@+id/preview"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.04"
+        android:background="@color/main_white_pure_color">
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/photo"></ImageView>
+
+        <ImageView
+            android:id="@+id/topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/camera"
+            android:src="@drawable/jing_bar"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/at"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/topic"
+            android:src="@drawable/at_bar"
+            android:visibility="gone"></ImageView>
+
+        <ImageView
+            android:id="@+id/face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/at"
+            android:src="@drawable/smile_face"></ImageView>
+
+        <TextView
+            android:id="@+id/overWordCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right_small"
+            android:text="200"
+            android:textColor="@color/text_more_gray"
+            android:textSize="@dimen/text_common"></TextView>
+    </RelativeLayout>
+
+    <com.zhiyicx.zycx.sociax.component.TSFaceView
+        android:id="@+id/face_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:tag="ture"
+        android:visibility="gone" />
+
+</LinearLayout>

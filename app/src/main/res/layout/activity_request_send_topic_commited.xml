@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white_bg_color"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/item_height"
+        android:layout_marginRight="@dimen/item_height">
+
+        <ImageView
+            android:id="@+id/iv_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tishiicon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:layout_toRightOf="@id/iv_request"
+            android:text="你的问题提交成功，有解答时我们会及时通知你：）"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_big" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_requests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_height"
+        android:background="@color/text_green"
+        android:paddingBottom="@dimen/margin_bottom"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="@dimen/margin_left_small"
+        android:text="查看问题"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_big" />
+
+</LinearLayout>

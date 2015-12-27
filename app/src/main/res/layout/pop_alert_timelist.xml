@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_left"
+    android:orientation="vertical"
+    android:background="@color/main_white_bg_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_green_light"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_alert_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_common"
+            android:text="@string/alert_time_list_title"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/tv_alert_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提醒一次"
+            android:textSize="@dimen/text_small"
+            android:layout_below="@id/tv_alert_setting" />
+
+        <Button
+            android:id="@+id/btn_alert_dec"
+            android:layout_width="@dimen/margin_left"
+            android:layout_height="@dimen/margin_left"
+            android:background="@drawable/time_list_dec"
+            android:layout_alignParentRight="true" />
+
+        <Button
+            android:id="@+id/btn_alert_add"
+            android:layout_width="@dimen/margin_left"
+            android:layout_height="@dimen/margin_left"
+            android:background="@drawable/time_list_add"
+            android:layout_toLeftOf="@id/btn_alert_dec"
+            android:layout_marginRight="@dimen/margin_right" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_alert_time_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"></LinearLayout>
+
+    <Button
+        android:id="@+id/btn_alert_time_check"
+        style="@style/check_button" />
+
+</LinearLayout>

@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white_pure_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_white_pure_color"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_bottom_big">
+
+        <RelativeLayout
+            android:id="@+id/rl_history"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/main_white_pure_color"
+            android:padding="@dimen/margin_left_small">
+
+            <TextView
+                android:id="@+id/tv_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="既往病史"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_history"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@null"
+                android:hint="输入患过疾病"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_line_vertical_margin_10" />
+
+        <RelativeLayout
+            android:id="@+id/rl_allergy"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/main_white_pure_color"
+            android:padding="@dimen/margin_left_small">
+
+            <TextView
+                android:id="@+id/tv_allergy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="过敏史"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <EditText
+                android:id="@+id/et_allergy_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_allergy"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@null"
+                android:hint="输入过敏的"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_line_vertical_margin_10" />
+
+        <RelativeLayout
+            android:id="@+id/rl_single"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/main_white_pure_color"
+            android:padding="@dimen/margin_left_small">
+
+            <TextView
+                android:id="@+id/tv_single"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人史"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <EditText
+                android:id="@+id/et_single_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_single"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@null"
+                android:hint="出生地，生活地，曾旅游和生活地"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_line_vertical_margin_10" />
+
+        <RelativeLayout
+            android:id="@+id/rl_eat"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/main_white_pure_color"
+            android:padding="@dimen/margin_left_small">
+
+            <TextView
+                android:id="@+id/tv_eat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="饮食习惯"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <TextView
+                android:id="@+id/tv_eat_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_eat"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="荤素搭配"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/tv_eat_name"
+                android:src="@drawable/arrows_right" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_line_vertical_margin_10" />
+
+        <RelativeLayout
+            android:id="@+id/rl_smoke"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/main_white_pure_color"
+            android:padding="@dimen/margin_left_small">
+
+            <TextView
+                android:id="@+id/tv_smoke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="抽烟"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <TextView
+                android:id="@+id/tv_smoke_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_smoke"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="抽烟"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/tv_smoke_name"
+                android:src="@drawable/arrows_right" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_line_vertical_margin_10" />
+
+        <RelativeLayout
+            android:id="@+id/rl_smoke_year"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/main_white_pure_color"
+            android:padding="@dimen/margin_left_small">
+
+            <TextView
+                android:id="@+id/tv_smoke_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="抽烟起始年龄"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <EditText
+                android:id="@+id/et_smoke_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_smoke_year"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@null"
+                android:hint="请输入抽烟起始年龄"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_line_vertical_margin_10" />
+
+        <RelativeLayout
+            android:id="@+id/rl_smoke_gen"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/main_white_pure_color"
+            android:padding="@dimen/margin_left_small">
+
+            <TextView
+                android:id="@+id/tv_smoke_gen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每日根数"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <EditText
+                android:id="@+id/et_smoke_gen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_smoke_gen"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@null"
+                android:hint="请输入每日抽烟根数"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_line_vertical_margin_10" />
+
+        <RelativeLayout
+            android:id="@+id/rl_stop_smoke"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/main_white_pure_color"
+            android:padding="@dimen/margin_left_small">
+
+            <TextView
+                android:id="@+id/tv_stop_smoke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是否已戒烟"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <TextView
+                android:id="@+id/tv_stop_smoke_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_stop_smoke"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="已戒烟"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/tv_stop_smoke_name"
+                android:src="@drawable/arrows_right" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_line_vertical_margin_10" />
+
+        <RelativeLayout
+            android:id="@+id/rl_stop_smoke_time"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/main_white_pure_color"
+            android:padding="@dimen/margin_left_small">
+
+            <TextView
+                android:id="@+id/tv_stop_smoke_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="戒烟时间"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <TextView
+                android:id="@+id/tv_stop_smoke_time_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_stop_smoke_time"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="2015-03"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/tv_stop_smoke_time_name"
+                android:src="@drawable/arrows_right" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_line_vertical_margin_10" />
+
+        <RelativeLayout
+            android:id="@+id/rl_drink"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/main_white_pure_color"
+            android:padding="@dimen/margin_left_small">
+
+            <TextView
+                android:id="@+id/tv_drink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="饮酒"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <TextView
+                android:id="@+id/tv_drink_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_drink"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="饮酒"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/tv_drink_name"
+                android:src="@drawable/arrows_right" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_line_vertical_margin_10" />
+
+        <RelativeLayout
+            android:id="@+id/rl_drink_year"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/main_white_pure_color"
+            android:padding="@dimen/margin_left_small">
+
+            <TextView
+                android:id="@+id/tv_drink_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="饮酒起始年龄"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <EditText
+                android:id="@+id/et_drink_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_drink_year"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@null"
+                android:hint="请输入饮酒起始年龄"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_line_vertical_margin_10" />
+
+        <RelativeLayout
+            android:id="@+id/rl_drink_much"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/main_white_pure_color"
+            android:padding="@dimen/margin_left_small">
+
+            <TextView
+                android:id="@+id/tv_drink_much"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每日ml量"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <EditText
+                android:id="@+id/et_drink_much"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_drink_much"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@null"
+                android:hint="请输入每日饮酒ml量"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_line_vertical_margin_10" />
+
+        <RelativeLayout
+            android:id="@+id/rl_stop_drink"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/main_white_pure_color"
+            android:padding="@dimen/margin_left_small">
+
+            <TextView
+                android:id="@+id/tv_stop_drink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是否已戒酒"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <TextView
+                android:id="@+id/tv_stop_drink_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_stop_drink"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="已戒酒"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/tv_stop_drink_name"
+                android:src="@drawable/arrows_right" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_line_vertical_margin_10" />
+
+        <RelativeLayout
+            android:id="@+id/rl_stop_drink_time"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/main_white_pure_color"
+            android:padding="@dimen/margin_left_small">
+
+            <TextView
+                android:id="@+id/tv_stop_drink_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="戒酒时间"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <TextView
+                android:id="@+id/tv_stop_drink_name_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_stop_drink_time"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="2015-6"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/tv_stop_drink_name_time"
+                android:src="@drawable/arrows_right" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_line_vertical_margin_10" />
+
+        <RelativeLayout
+            android:id="@+id/rl_first"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/main_white_pure_color"
+            android:padding="@dimen/margin_left_small">
+
+            <TextView
+                android:id="@+id/tv_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="初潮年纪"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <EditText
+                android:id="@+id/et_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_first"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@null"
+                android:hint="请输入初潮年纪"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_line_vertical_margin_10" />
+
+        <RelativeLayout
+            android:id="@+id/rl_last_time"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/main_white_pure_color"
+            android:padding="@dimen/margin_left_small">
+
+            <TextView
+                android:id="@+id/tv_last_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="末次月经时间"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <TextView
+                android:id="@+id/tv_last_time_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_last_time"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="2015-03"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/tv_last_time_name"
+                android:src="@drawable/arrows_right" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_line_vertical_margin_10" />
+
+        <RelativeLayout
+            android:id="@+id/rl_stop_yuejin"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/main_white_pure_color"
+            android:padding="@dimen/margin_left_small">
+
+            <TextView
+                android:id="@+id/tv_stop_yuejin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="闭经年龄"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <EditText
+                android:id="@+id/et_stop_yuejins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_stop_yuejin"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@null"
+                android:hint="请输入闭经年龄"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_line_vertical_margin_10" />
+
+        <RelativeLayout
+            android:id="@+id/rl_children"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/main_white_pure_color"
+            android:padding="@dimen/margin_left_small">
+
+            <TextView
+                android:id="@+id/tv_children"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="子女"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <TextView
+                android:id="@+id/tv_children_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_children"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="1子1女"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/tv_children_name"
+                android:src="@drawable/arrows_right" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_line_vertical_margin_10" />
+
+        <RelativeLayout
+            android:id="@+id/rl_family_history"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/main_white_pure_color"
+            android:padding="@dimen/margin_left_small">
+
+            <TextView
+                android:id="@+id/tv_family_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="家族史"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+
+            <EditText
+                android:id="@+id/et_family_historys"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_family_history"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@null"
+                android:hint="输入家族病史"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_common" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_line_vertical_margin_10" />
+    </LinearLayout>
+
+</ScrollView>

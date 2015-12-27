@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar">
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/leftButton"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:text="返回" />
+
+        <TextView
+            style="@style/title"
+            android:layout_centerInParent="true"
+            android:text="@string/qikan_title" />
+
+        <Button
+            android:id="@+id/btn_share"
+            style="@style/rightButton"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="分享" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="100dp"
+        android:layout_gravity="center"
+        android:visibility="visible" />
+
+    <WebView
+        android:id="@+id/view_qikan"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+</LinearLayout>

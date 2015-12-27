@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar">
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/leftButton"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:text="返回" />
+
+        <TextView
+            style="@style/title"
+            android:layout_centerInParent="true"
+            android:text="@string/kecheng_title" />
+
+        <Button
+            android:id="@+id/btn_cmt"
+            style="@style/rightButton"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/web_comment" />
+
+        <Button
+            android:id="@+id/btn_share"
+            style="@style/rightButton"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_cmt"
+            android:text="分享" />
+    </RelativeLayout>
+
+    <com.youku.player.base.YoukuPlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.zhiyicx.zycx.widget.PagerSlidingTabStrip
+            android:id="@+id/sliding_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vPager"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="#ffffff"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+    </LinearLayout>
+
+</LinearLayout>

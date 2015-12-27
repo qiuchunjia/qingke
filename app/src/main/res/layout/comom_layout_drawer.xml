@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color">
+
+    <RelativeLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 公共的界面布局，所有的activity都要用到它用來填充title，content -->
+        <!-- 公共的title -->
+
+        <LinearLayout
+            android:id="@+id/ll_Title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/main_color"
+            android:orientation="vertical"></LinearLayout>
+        <!-- 公共的content底部，一般不會用到它，只有主界面的时候才会用到它，所以平常都隐藏它 -->
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_height"
+            android:layout_alignParentBottom="true"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:visibility="gone"></LinearLayout>
+        <!-- 公共的content，设置可以滑动 （因為內容多的時候必須自動填充賽） -->
+
+        <FrameLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ll_bottom"
+            android:layout_below="@id/ll_Title"
+            android:background="@color/main_white_bg_color"
+            android:orientation="vertical"></FrameLayout>
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/id_left_menu"
+        android:name="qcjlibrary.fragment.FragmentMenu"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:tag="LEFT" />
+
+</android.support.v4.widget.DrawerLayout>

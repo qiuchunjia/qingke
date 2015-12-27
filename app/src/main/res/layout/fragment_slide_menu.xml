@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 头部信息 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <qcjlibrary.widget.RoundImageView
+            android:id="@+id/riv_user_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:src="@drawable/default_image_small" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:layout_toRightOf="@id/riv_user_icon"
+            android:text="呵呵哒"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_very_big" />
+
+        <ImageView
+            android:id="@+id/menu_iv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left_small"
+            android:layout_toRightOf="@id/tv_username"
+            android:src="@drawable/gerenshezhiicon"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_big" />
+    </RelativeLayout>
+    <!-- 首页 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_home"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginTop="60dp">
+
+        <ImageView
+            android:id="@+id/iv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:src="@drawable/homeicon" />
+
+        <TextView
+            android:id="@+id/tv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_toRightOf="@id/iv_home"
+            android:text="进入首页"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_big" />
+
+        <ImageView
+            android:id="@+id/iv_home_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@id/tv_home"
+            android:src="@drawable/arrows_right_write"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_big" />
+    </RelativeLayout>
+    <!-- 我的提问 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_question"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height">
+
+        <ImageView
+            android:id="@+id/iv_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:src="@drawable/wentiicon" />
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_toRightOf="@id/iv_question"
+            android:text="我的提问"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_big" />
+
+        <ImageView
+            android:id="@+id/iv_question_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@id/tv_question"
+            android:src="@drawable/arrows_right_write"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_big" />
+    </RelativeLayout>
+    <!-- 我的应用 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_app"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height">
+
+        <ImageView
+            android:id="@+id/iv_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:src="@drawable/yingyongicon" />
+
+        <TextView
+            android:id="@+id/tv_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_toRightOf="@id/iv_app"
+            android:text="我的应用"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_big" />
+
+        <ImageView
+            android:id="@+id/iv_app_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@id/tv_app"
+            android:src="@drawable/arrows_right_write"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_big" />
+    </RelativeLayout>
+    <!-- 我的圈子 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_cycle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height">
+
+        <ImageView
+            android:id="@+id/iv_cycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:src="@drawable/quanziicon" />
+
+        <TextView
+            android:id="@+id/tv_cycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_toRightOf="@id/iv_cycle"
+            android:text="我的圈子"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_big" />
+
+        <ImageView
+            android:id="@+id/iv_cycle_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@id/tv_cycle"
+            android:src="@drawable/arrows_right_write"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_big" />
+    </RelativeLayout>
+    <!-- 我的期刊 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_periodical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height">
+
+        <ImageView
+            android:id="@+id/iv_periodical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:src="@drawable/qikanicon" />
+
+        <TextView
+            android:id="@+id/tv_periodical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_toRightOf="@id/iv_periodical"
+            android:text="我的期刊"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_big" />
+
+        <ImageView
+            android:id="@+id/iv_periodical_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@id/tv_periodical"
+            android:src="@drawable/arrows_right_write"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_big" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_quit"
+        android:layout_width="160dp"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="@dimen/item_height"
+        android:background="@color/quit_color"
+        android:text="退出登录"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_big" />
+
+</LinearLayout>

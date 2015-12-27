@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/weibolist"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_margin="8dp"
+        android:src="@drawable/add_star" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textColor="@color/black" />
+
+</LinearLayout>

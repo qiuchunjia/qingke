@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_white_pure_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/margin_left"
+        android:text="荤"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_big" />
+
+    <include layout="@layout/view_line_vertical" />
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/margin_left"
+        android:text="素"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_big" />
+
+    <include layout="@layout/view_line_vertical" />
+
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/margin_left"
+        android:text="荤素搭配"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_big" />
+
+</LinearLayout>
