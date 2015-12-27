@@ -39,11 +39,13 @@ proguard.cfg
 *.ap_
 
 # files for the dex VM
+
 *.dex
 
 # Java class files
 *.class
 
+<<<<<<< HEAD
 # generated files
 bin/
 gen/
